@@ -1,0 +1,20 @@
+name: eec-center
+server:
+  port: 8080
+spring:
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      indent-output: true
+    date-format: yyyy-MM-dd HH:mm:ss
+    parser:
+      allow-missing-values: true
+  jersey:
+    application-path: /
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%X{x-request-id}] %-5level %logger{50} - %msg%n'
+  level:
+    root: info
+    #com.chz.mapper: debug
+
