@@ -50,7 +50,7 @@
             <artifactId>clearsky</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/f_ClearSkyDetection.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/resources/lib/f_ClearSkyDetection-0.1.jar</systemPath>
         </dependency>
     </dependencies>
 
