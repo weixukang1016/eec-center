@@ -1,12 +1,12 @@
 name: eec-center
 server:
-  port: 8080
+  port: 8082
 spring:
   jackson:
     default-property-inclusion: non_null
     serialization:
       indent-output: true
-    date-format: yyyy-MM-dd HH:mm:ss
+    date-format: yyyy-MM-dd HH:mm:ss.SSS
     parser:
       allow-missing-values: true
   jersey:

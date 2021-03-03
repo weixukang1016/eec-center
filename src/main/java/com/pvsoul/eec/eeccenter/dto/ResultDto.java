@@ -26,9 +26,11 @@ public class ResultDto implements Serializable {
     @JsonProperty("code")
     private String code = "0";
 
-    //成功
+    //错误消息，成功的情况消息为空
     @JsonProperty("msg")
-    private String msg = "成功";
+    private String msg = "";
 
-
+    //成功
+    @JsonProperty("entity")
+    private Object entity;
 }

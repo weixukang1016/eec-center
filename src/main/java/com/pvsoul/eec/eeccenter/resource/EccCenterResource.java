@@ -3,6 +3,7 @@ package com.pvsoul.eec.eeccenter.resource;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.pvsoul.eec.eeccenter.dto.ResultDto;
+import com.pvsoul.eec.eeccenter.dto.request.CalculateMetoeCookedDataRequestDto;
 import com.pvsoul.eec.eeccenter.service.EecCenterService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,17 @@ public class EccCenterResource {
 
         log.info("matlab test");
         ResultDto resultDto = eecCenterService.test();
+        return Response.status(Response.Status.OK).entity(resultDto).build();
+    }
+
+    @POST
+    @Path("/calculatemetoecookeddata")
+    //@ApiOperation("计算气象数据")
+    public Response calculateMetoeCookedData(@Context HttpServletRequest request, CalculateMetoeCookedDataRequestDto calculateMetoeCookedDataRequestDto) {
+
+        log.info("calculatemetoedata start");
+        ResultDto resultDto = eecCenterService.calculateMetoeData(calculateMetoeCookedDataRequestDto);
+        log.info("calculatemetoedata end");
         return Response.status(Response.Status.OK).entity(resultDto).build();
     }
 

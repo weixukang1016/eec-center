@@ -1,9 +1,9 @@
-package com.pvsoul.eec.eeccenter.dto.mtdto;
+package com.pvsoul.eec.eeccenter.mtdto;
 
 import com.mathworks.toolbox.javabuilder.MWCellArray;
 import com.mathworks.toolbox.javabuilder.MWNumericArray;
 
-public class MeteoDataDto {
+public class MeteoDataMtdto {
     private MWCellArray time_stamp;
 
     private MWNumericArray value;

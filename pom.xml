@@ -47,10 +47,10 @@
         </dependency>
         <dependency>
             <groupId>com.pvsoul.eec</groupId>
-            <artifactId>clearsky</artifactId>
+            <artifactId>eecmodel</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/f_ClearSkyDetection-0.1.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/resources/lib/eecmodel.jar</systemPath>
         </dependency>
     </dependencies>
 
